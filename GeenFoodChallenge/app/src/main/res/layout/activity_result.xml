@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            app:title="@string/results"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/GreenTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <!-- CO2e Result -->
+    <LinearLayout
+        android:id="@+id/CO2_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_layout">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/result_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="1dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/CO2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/co2_text"
+                    android:textColor="@color/secondarytext"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/CO2_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CO2_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="0.0kg"
+                    android:textColor="@color/blue_text"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:id="@+id/gauge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/CO2_value">
+                <!-- Gauge -->
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:splitTrack="false"
+                    android:paddingTop="10px"
+                    android:paddingBottom="10px"
+                    android:minHeight="6dip"
+                    android:maxHeight="6dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:text="Low CO2e"
+                        android:textSize="14dp"
+                        android:textColor="@color/secondarytext"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Average"
+                        android:textSize="14dp"
+                        android:textColor="@color/secondarytext"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="High CO2e"
+                        android:textSize="14dp"
+                        android:textColor="@color/secondarytext"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/faintgrey"
+                    android:layout_below="@+id/gauge"
+                    android:layout_marginBottom="5dp"/>
+
+
+                    <!-- Equivalent Values -->
+                <LinearLayout
+                    android:id="@+id/equivalent_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/equivalent_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/na"
+                        android:textColor="@color/blue_text"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/new_stat_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_outline"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:minHeight="0dp"
+                        android:text="@string/see_equivalent"
+                        android:textColor="@color/greenFood"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Diet Plan Text -->
+        <TextView
+            android:id="@+id/diet_plan_text"
+            android:text="diet plans"
+            android:textColor="@color/secondarytext"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equivalent_text"/>
+
+        <!-- Pledge Text -->
+        <TextView
+            android:id="@+id/pledge_text"
+            android:text=""
+            android:textColor="@color/secondarytext"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diet_plan_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_outline"
+            style="?android:attr/borderlessButtonStyle"
+            android:minHeight="0dp"
+            android:text="@string/edit_button_text"
+            android:textColor="@color/greenFood"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            style="?android:attr/borderlessButtonStyle"
+            android:minHeight="0dp"
+            android:text="@string/homepage"
+            android:textSize="14dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

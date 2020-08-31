@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChallengeChild2Fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Filter By Municipality"
+            android:textSize="18dp"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/municipality_spinner"
+            style="@style/spinner_style"
+            android:padding="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pledgeRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top|center"
+        android:src="@drawable/ic_menu_refresh_24dp"
+        app:backgroundTint="@color/greenFood" />
+
+    <TableLayout
+        android:id="@+id/leader_board_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop= "100dp">
+
+
+
+        <TableRow
+            android:id="@+id/table_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/leader_board_pledgeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding = "5dp"
+                android:fontFamily="sans-serif-medium"
+                android:background = "@drawable/cell_shapebox"
+                android:text="@string/leaderboard_name"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/leader_board_municipality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding = "5dp"
+                android:fontFamily="sans-serif-medium"
+                android:background = "@drawable/cell_shape"
+                android:text="@string/leaderboard_municipality"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/leader_board_Co2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding = "5dp"
+                android:fontFamily="sans-serif-medium"
+                android:background = "@drawable/cell_shape"
+                android:text="@string/leaderboard_Co2"
+                android:textColor="#000" />
+        </TableRow>
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            >
+            <TableLayout
+                android:id="@+id/leader_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    </TableLayout>
+
+</FrameLayout>

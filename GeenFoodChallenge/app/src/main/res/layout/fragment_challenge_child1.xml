@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallengeChild1Fragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <!-- Community Progress Title -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/faintgrey"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:text="@string/community_progress"
+            android:gravity="left"
+            android:textColor="@color/secondarytext"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/faintgrey"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Circular Progress -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:id="@+id/progress_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ProgressBar
+                    android:id="@+id/progressWheel"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:progress="100"
+                    android:secondaryProgress="0"
+                    android:progressDrawable="@drawable/circular"
+                    android:indeterminateTintMode="src_in" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="80%"
+                        android:textColor="@color/blue_text"
+                        android:textSize="25dp" />
+                    <TextView
+                        android:id="@+id/progress_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/target_achieved"
+                        android:textColor="@color/secondarytext"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_frame"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/icon_description"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_fiber_manual_record_24dp"/>
+                <TextView
+                    android:text="Pledged "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/total_pledged_1"
+                    android:textColor="@color/blue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/target_2020" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <!-- Summary Stats Title -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/faintgrey"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:text="@string/community_summary"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/secondarytext"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/faintgrey"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Summary Stats: Total Users -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/people_icon"
+                android:src="@drawable/ic_people_24dp"
+                android:contentDescription="@string/icon_description"
+                android:tint="@color/faintgrey"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/total_users_label"
+                android:text="@string/total_users"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/total_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue_text"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!-- Summary Stats: Total Pledged -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/total_icon"
+                android:src="@drawable/ic_trending_up_24dp"
+                android:contentDescription="@string/icon_description"
+                android:tint="@color/faintgrey"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/total_pledged_label"
+                android:text="@string/total_pledged"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/total_pledged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue_text"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!-- Summary Stats: Average Pledged -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/chart_icon"
+                android:src="@drawable/ic_chart_24dp"
+                android:contentDescription="@string/icon_description"
+                android:tint="@color/faintgrey"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/avg_pledged_label"
+                android:text="@string/average_pledged"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/avg_pledged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue_text"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

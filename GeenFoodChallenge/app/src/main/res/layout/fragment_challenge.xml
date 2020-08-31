@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChallengeFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/GreenThemeTab">
+
+        <!-- Pledge card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pledge_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="2dp">
+
+                <!-- Covers the pledge card if there is no pledge -->
+
+                <TextView
+                    android:id="@+id/create_pledge_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/blue_text"
+                    android:text="@string/create_pledge"
+                    android:visibility="gone"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+                <!-- Pledge card layout -->
+                <RelativeLayout
+                    android:id="@+id/pledge_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_screen"
+                    android:visibility="gone"
+                    android:padding="0dp">
+
+                    <ImageView
+                        android:id="@+id/pledge_icon"
+                        android:contentDescription="@string/icon_description"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="10dp"
+                        android:padding="0dp"
+                        android:scaleType="fitStart" />
+
+                    <ImageView
+                        android:id="@+id/menu_icon"
+                        android:contentDescription="@string/icon_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_more_vert_24dp" />
+
+                    <!-- Name, Municipality and Pledge Amount -->
+                    <LinearLayout
+                        android:id="@+id/profile_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@+id/pledge_icon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pledge_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anonymous"
+                            android:maxLength="18"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/primarytext"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/pledge_municipality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/na"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/pledge_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pledge_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/myPledge"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/pledge_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_marginLeft="5dp"
+                            android:text="0kg"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/greenFood"
+            android:theme="@style/GreenThemeTab"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+</android.support.design.widget.CoordinatorLayout>

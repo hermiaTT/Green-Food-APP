@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">GreenFoodChallenge</string>
+    <string name="app_title">Green Food Challenge</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Prev</string>
+    <string name="question_text">In a typical week, how many times do you eat the following?</string>
+    <string name="numberpicker_heading">Food Item</string>
+    <string name="numberpicker_heading2">Times Per Week</string>
+    <string name="diet_history">Diet History</string>
+    <string name="results">Results</string>
+    <string name="no_account">Don\'t have an account?\u0020</string>
+    <string name="sign_up">Sign up.</string>
+    <string name="icon_description">icon</string>
+
+
+    <!-- Home page cardview text -->
+    <string name="learn_more">Learn More</string>
+    <string name="about_card_title">Learn More</string>
+    <string name="about_card_desc">Detailed information about CO2e and the impact of food.</string>
+    <string name="quiz_card_title">CO2e Calculator</string>
+    <string name="quiz_card_desc">Calculate the carbon footprint from your diet.</string>
+    <string name="history_card_title">Diet History</string>
+    <string name="history_card_desc">See your previous diets.</string>
+    <string name="diet_card_title">Diet Plans</string>
+    <string name="diet_card_desc">Healthy diets with low carbon footprints.</string>
+
+    <!-- Result page text -->
+    <string name="co2_text">The CO2e produced from your diet is</string>
+    <string name="per_year">kg/year</string>
+    <string name="text4">This is equivalent to:</string>
+    <string name="diet_button_text">Diet Plans</string>
+    <string name="edit_button_text">Edit My Diet</string>
+    <string name="homepage">Home Page</string>
+    <string name="encouragement_text">Learn how to reduce your CO2e by taking a look at our diet plans. </string>
+    <string name="pledge_text">Commit to reducing your CO2e. Join the challenge and make a pledge!</string>
+    <string name="pledge_text2">Has your diet changed? Update your pledge.</string>
+    <string name="no_result">Oops, please go back and add at least one food item to your diet.</string>
+    <string name="answer_text">Your answer is...</string>
+    <string name="see_equivalent">See another equivalent</string>
+
+    <string name="home_start_button">Start</string>
+    <string name="suggested_diets">Here are some suggested diets</string>
+    <string name="diet_text">Save: N/A </string>
+    <string name="back_button">Back</string>
+
+    <!-- About Page Text -->
+    <string name="background_info">Background Information</string>
+    <string name="what_is_co2_heading">What is CO2e?</string>
+    <string name="what_is_co2_description">Greenhouse gases, measured in CO2e (CO2 equivalents),
+        directly contribute to climate change. In 2015, each person in Metro Vancouver produced about 6-8 tonnes of CO2e!
+        That\'s the equivalent of using roughly 300 propane cylinders for home barbeques!</string>
+    <string name="food_and_co2_heading">How is food related to CO2e?</string>
+    <string name="food_and_co2_description">We are all familiar with transportation being a big contributor to greenhouse gases,
+        but did you know that the food we eat make up roughly 20% of our carbon footprint?
+        The CO2e is created from various stages of production such as energy used to grow crops,
+        delivery of products to your local supermarkets, etc.</string>
+    <string name="co2_calculator_heading">What is a CO2e Calculator?</string>
+    <string name="co2_calculator_description">Not all foods are created equal. Some are bigger contributors to CO2e than others.
+        Our CO2e calculator takes your diet and estimates how much CO2e it produces in one year.
+        And yes, you\'ve guessed it - a vegan diet produces way lower CO2e than a meat-focused diet.
+        \n\nThe purpose of the calculator is to give you a general idea of what your diet means in terms of
+        CO2e and how it compares to meat-based or plant-based diets. To further help you understand what this means, we provide equivalent measures
+        in more tangible terms such as \"this is equivalent to using 10 barrels of gasoline.
+    </string>
+    <string name="co2_accurate_heading">How accurate is the calculator?</string>
+    <string name="co2_accurate_description">
+        The short answer is: not very. Food production varies greatly from product to product. For example, local foods is likely to produce less
+        CO2e than imported foods due to the shorter routes required for transportation. It would make for a very long questionnaire if we were to
+        ask you for every little detail about each type of food you eat. Calculating a CO2e value to two significant digits is not our purpose.
+        \n\nYou will notice that the calculator doesn\'t give you a comprehensive list of food items to choose from. We have excluded food items
+        that don\'t produce a significant amount of CO2e unless consumed in absurdly large quantities. We also don\'t ask you to take on the impossible
+        task of knowing whether that lasagna you ate contained one cup or half a cup of beef. The difference is negligible and we want to keep this
+        calculator as simple to use as possible.
+    </string>
+
+    <!-- Pledge Page Text -->
+    <string name="name">Name</string>
+    <string name="pledge_amount">Pledge Amount (kg)</string>
+    <string-array name="municipality_array">
+        <item>Burnaby</item>
+        <item>Coquitlam</item>
+        <item>Delta</item>
+        <item>New Westminster</item>
+        <item>North Vancouver</item>
+        <item>Port Moody</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+        <item>Vancouver</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Join Challenge Page Text -->
+    <string name="join_challenge_button">Join the Challenge</string>
+    <string name="challenge_descr">This challenge brings Vancouverites together to reduce the carbon footprint produced from our diets in
+        order to achieve Vancouver\'s goal of becoming the world\'s greenest city by 2020.
+        \n\nPledge to reduce your diet\'s carbon footprint and watch as we progress toward the goal in real-time!
+    </string>
+    <string name="quit_challenge">Quit the Challenge</string>
+
+    <!-- Challenge Onboard Slides Text -->
+    <string name="skip">SKIP</string>
+    <string name="next_cap">NEXT</string>
+    <string name="got_it">GOT IT!</string>
+
+
+    <!-- Challenge Page Text -->
+    <string name="create_pledge">Click here to create a pledge</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="community_progress">Community Progress</string>
+    <string name="community_summary">Community Summary</string>
+
+    <string name="na">Not Available </string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">Save</string>
+    <string name="submit">Submit</string>
+    <string name="myPledge">My Pledge: </string>
+    <string name="target_achieved">Goal Achieved</string>
+    <string name="target_2020">\u0020/ 382,000 tCO2e</string>
+    <string name="target_2020_value">382,000</string>
+    <string name="total_pledged">Total Pledged:</string>
+    <string name="total_users">Total Users:</string>
+    <string name="average_pledged">Average Pledged:</string>
+    <string name="leaderboard_name">Name</string>
+    <string name="leaderboard_municipality">Municipality</string>
+    <string name="leaderboard_Co2">Co2 Pledge (kg)</string>
+
+    <string name="kg_unit">kg</string>
+    <string name="baseText"> 600 </string>
+
+    <!-- Restaurant Guide Text -->
+    <string name="protein_type">Protein Type</string>
+    <string name="dish_name">Name of Dish</string>
+    <string name="restaurant_name">Name of Restaurant</string>
+    <string name="delete_restaurant">Tap picture to delete</string>
+    <string name="view_restaurant">Enter edit mode</string>
+    <string name="restaurant_description">Description (Optional)</string>
+    <string-array name="municipalityFilter_array">
+        <item>Any</item>
+        <item>Burnaby</item>
+        <item>Coquitlam</item>
+        <item>Delta</item>
+        <item>New Westminster</item>
+        <item>North Vancouver</item>
+        <item>Port Moody</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+        <item>Vancouver</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="protein_array">
+        <item>Beef</item>
+        <item>Lamb</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+        <item>Fish</item>
+        <item>Eggs</item>
+        <item>Tofu</item>
+        <item>Nuts</item>
+        <item>Beans</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="proteinFilter_array">
+        <item>Any</item>
+        <item>Beef</item>
+        <item>Lamb</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+        <item>Fish</item>
+        <item>Eggs</item>
+        <item>Tofu</item>
+        <item>Nuts</item>
+        <item>Beans</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--- Foods -->
+    <string-array name="redMeatsArray">
+        <item>Lamb</item>
+        <item>Beef</item>
+        <item>Duck</item>
+        <item>Pork</item>
+    </string-array>
+
+    <string-array name="redMeatsCO2eArray">
+        <item>2.94</item>
+        <item>2.025</item>
+        <item>1.01</item>
+        <item>0.9075</item>
+    </string-array>
+
+    <string-array name="whiteMeatsArray">
+        <item>Chicken</item>
+        <item>Turkey</item>
+        <item>Salmon</item>
+        <item>Canned Tuna</item>
+    </string-array>
+
+    <string-array name="whiteMeatsCO2eArray">
+        <item>0.5175</item>
+        <item>0.8175</item>
+        <item>0.8925</item>
+        <item>0.4575</item>
+    </string-array>
+
+    <string-array name="otherProteinsArray">
+        <item>Eggs</item>
+        <item>Tofu</item>
+        <item>Nuts</item>
+        <item>Beans</item>
+    </string-array>
+
+    <string-array name="otherProteinsCO2eArray">
+        <item>0.48</item>
+        <item>0.3</item>
+        <item>0.046</item>
+        <item>0.3</item>
+    </string-array>
+
+    <string-array name="carbsArray">
+        <item>Rice</item>
+        <item>Potatoes</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+    </string-array>
+
+    <string-array name="carbsCO2eArray">
+        <item>0.27</item>
+        <item>0.2175</item>
+        <item>0.15</item>
+        <item>0.15</item>
+    </string-array>
+
+    <string-array name="dairyArray">
+        <item>Milk</item>
+        <item>Yogurt</item>
+        <item>Cheese</item>
+        <item>Ice Cream</item>
+    </string-array>
+
+    <string-array name="dairyCO2eArray">
+        <item>0.4598</item>
+        <item>0.385</item>
+        <item>0.675</item>
+        <item>0.4536</item>
+    </string-array>
+
+
+    <!--- Array of Food Categories -->
+    <string-array name="FoodNames">
+        <item>@array/redMeatsArray</item>
+        <item>@array/whiteMeatsArray</item>
+        <item>@array/otherProteinsArray</item>
+        <item>@array/carbsArray</item>
+        <item>@array/dairyArray</item>
+    </string-array>
+
+    <string-array name="FoodCO2e">
+        <item>@array/redMeatsCO2eArray</item>
+        <item>@array/whiteMeatsCO2eArray</item>
+        <item>@array/otherProteinsCO2eArray</item>
+        <item>@array/carbsCO2eArray</item>
+        <item>@array/dairyCO2eArray</item>
+    </string-array>
+
+    <!--Suggested diet text-->
+    <string name="kg">kg</string>
+    <string name="co2e_dif_start">This diet\'s CO2e is </string>
+    <string name="co2e_dif_end"> less than your diet.</string>
+    <string name="better_diet">Your current diet is better than this one. Keep it up!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PledgeActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            app:title="Make a Pledge"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/GreenTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:orientation="vertical">
+        <!-- Profile Icon -->
+
+        <FrameLayout
+            android:id="@+id/progress_frame"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                app:backgroundTint="@color/greenFood"
+                app:fabSize="mini"
+                android:src="@drawable/ic_edit_24dp" />
+        </FrameLayout>
+
+            <EditText
+                android:id="@+id/pledgeName"
+                android:textColor="@color/primarytext"
+                android:background="@null"
+                android:hint="@string/name"
+                android:textSize="18dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/faintgrey"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Municipality"
+                android:textSize="18dp"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/municipality_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <View
+            android:background="@color/faintgrey"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/co2Pledge"
+            android:textColor="@color/primarytext"
+            android:textSize="18dp"
+            android:background="@null"
+            android:hint="@string/pledge_amount"
+            android:maxLines="1"
+            android:inputType="number"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/faintgrey"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/pledge_help"
+                android:text="How much should I pledge?"
+                android:textColor="@color/greenFood"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_outline"
+            android:text="@string/cancel"
+            android:layout_margin="20dp"
+            android:textColor="@color/greenFood"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/submitPledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:text="@string/save"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "1043955059138",
+    "firebase_url": "https://byteme-greenfoodchallenge.firebaseio.com",
+    "project_id": "byteme-greenfoodchallenge",
+    "storage_bucket": "byteme-greenfoodchallenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043955059138:android:a2215ed076393846",
+        "android_client_info": {
+          "package_name": "com.byteme.greenfoodchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043955059138-tpo4t0rr0kmd7hppju353hngdjmm8hli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byteme.greenfoodchallenge",
+            "certificate_hash": "91796c17c295a18a589e0c2ba4251de6eb9d355f"
+          }
+        },
+        {
+          "client_id": "1043955059138-25hm0r119e0dnqtukk6cg8sedd36k1b4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byteme.greenfoodchallenge",
+            "certificate_hash": "5f9cf0e54e2375298d2af4b0f9d92c804bc2c36e"
+          }
+        },
+        {
+          "client_id": "1043955059138-gl7u4t1aillqjh65n0ph1p2cgpuj1r74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byteme.greenfoodchallenge",
+            "certificate_hash": "8307c63d790836227769f530de9dc8600c359f65"
+          }
+        },
+        {
+          "client_id": "1043955059138-lm0td5a9to52lpjgvm4mpss0h8cht461.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byteme.greenfoodchallenge",
+            "certificate_hash": "c44352fd3abef0f7d61cc91b17a68e6ce3342618"
+          }
+        },
+        {
+          "client_id": "1043955059138-u0l4aafa46kqvqpm6n14coimm2nt3nmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMgTqtQB8PFO8ojRovGW-LaG2773P558I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043955059138-u0l4aafa46kqvqpm6n14coimm2nt3nmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

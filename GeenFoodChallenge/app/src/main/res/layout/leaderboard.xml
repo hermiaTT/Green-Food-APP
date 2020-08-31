@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TableRow
+        android:id="@+id/table_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/leader_board_pledgeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:background = "@drawable/cell_shapebox"
+            android:singleLine = "true"
+            android:padding = "5dp"
+            android:text="Name"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/leader_board_municipality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:background = "@drawable/cell_shape"
+            android:singleLine = "true"
+            android:padding = "5dp"
+            android:text="Municipality"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/leader_board_Co2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:background = "@drawable/cell_shape"
+            android:singleLine = "true"
+            android:padding = "5dp"
+            android:text="Co2"
+            android:textColor="#000" />
+    </TableRow>
+</LinearLayout>
